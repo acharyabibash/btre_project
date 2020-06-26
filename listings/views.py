@@ -1,14 +1,20 @@
+""" This Docstring is used for Views
+    Author : Bibash Achara
+    Date : 6/26/2019
+"""
+
+
+
 from django.shortcuts import render
 
 from .models import Listing
 
 def index(request):
-    listings = Listing.objects.all()
-    
+    """ Function USed for querying through objects"""
+    listings = Listing.objects.all()   
     context = {
         'listings':listings,
-    }
-    
+    }   
     return render(request,'listings/listings.html')
 
 def listing(request):
