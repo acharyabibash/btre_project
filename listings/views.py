@@ -1,10 +1,3 @@
-""" This Docstring is used for Views
-    Author : Bibash Achara
-    Date : 6/26/2019
-"""
-
-
-
 from django.shortcuts import render
 
 from .models import Listing
